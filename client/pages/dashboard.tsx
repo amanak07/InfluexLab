@@ -55,7 +55,7 @@ const DashboardPage = () => {
 
   const fetchInquiries = async () => {
     try {
-      const response = await axios.get('/api/inquiries');
+      const response = await axios.get('/inquiries');
       setInquiries(response.data);
     } catch (error) {
       console.error('Error fetching inquiries:', error);
